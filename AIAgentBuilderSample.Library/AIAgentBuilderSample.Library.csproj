@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>Without.Systems.AIAgentBuilderSample.Library</AssemblyName>
+        <RootNamespace>Without.Systems.AIAgentBuilderSample</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="13.0.1" />
+        <PackageReference Include="Microsoft.KernelMemory.Core" Version="0.70.240803.1" />
+        <PackageReference Include="OutSystems.ExternalLibraries.SDK" Version="1.4.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\AgentBuilderSample.png" />
+      <EmbeddedResource Include="Resources\AgentBuilderSample.png" />
+    </ItemGroup>
+
+</Project>
